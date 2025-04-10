@@ -8,7 +8,7 @@ const AddJob = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/jobs', form);
+    await axios.post('https://job-track-1.onrender.com', form);
     setForm({ company: '', role: '', status: 'Applied', appliedDate: '', link: '' });
   };
 
