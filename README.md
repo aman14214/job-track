@@ -12,8 +12,8 @@ A full-stack job tracking application built with the MERN stack where users can:
 
 ## 🔗 Live Demo
 
-- 🌐 Frontend: [https://your-frontend-url.vercel.app](#)
-- ⚙️ Backend: [https://your-backend-url.onrender.com](#)
+- 🌐 Frontend: [https://job-track-fuzi9ghqn-aman-sharmas-projects-7aceb6a5.vercel.app/](#)
+- ⚙️ Backend: [https://job-track-1.onrender.com](#)
 
 ---
 
