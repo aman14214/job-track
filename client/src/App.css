@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #00ffc3;
+  border-bottom: 2px solid #00ffc3;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  background-color: #333;
+  color: #00ffc3;
+  border: 1px solid #00ffc3;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #00ffc3;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.submitBtn {
+  margin-bottom: 30px;
+}
+
+.submitBtn button {
+  background-color: #00ffc3;
+  color: black;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submitBtn button:hover {
+  background-color: #00b394;
+  color: white;
+}
+
+/* Job Card Styles */
+
+.jobCard {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 255, 195, 0.2);
+  transition: all 0.3s ease;
+}
+
+.jobCard:hover {
+  transform: scale(1.02);
+  border-color: #00ffc3;
+  box-shadow: 0 4px 12px rgba(0, 255, 195, 0.3);
+}
+
+.jobCard .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffc3;
+  flex-wrap: wrap;
+}
+
+.jobCard .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.jobCard .details span {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #444;
+  padding-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.jobCard .details select {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #00ffc3;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.jobCard a {
+  color: #00ffc3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.jobCard a:hover {
+  text-decoration: underline;
+}
+
+.jobCard button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.jobCard button:hover {
+  background-color: #cc0000;
+}
+
+/* ✅ Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .jobCard {
+    padding: 16px;
+    margin: 15px auto;
+  }
+
+  .jobCard .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .jobCard .details span {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form input,
+  .form select {
+    width: 90%;
+  }
+
+  .submitBtn button {
+    width: 90%;
+  }
+}
